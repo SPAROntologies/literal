@@ -1,0 +1,100 @@
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "has literal"@en .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest> "SELECT DISTINCT ?entity ?property\nWHERE {\n	?literal a litre:Literal .\n	{ ?literal ?property ?entity } UNION { ?entity ?property ?literal }\n}"@en .
+_:Nefb30f3fd8484cd59af9bd440e2d2046 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/title> "Literal Reification pattern" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the reified literal to another one that has the same literal value."@en .
+_:Nefb30f3fd8484cd59af9bd440e2d2046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:N33df3bd08c58488980f8124dfa1b6a81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:N937b64d09a104c4c8619c9c84ce796d5 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> .
+_:N79d4181685924345ada88cadb2507327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/creator> "Aldo Gangemi"^^<http://www.w3.org/2001/XMLSchema#string> .
+<urn:swrl#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:N1aaf384df3f24e3096ca149a09316ada <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Naf29ddcdb3fe4204ba3e5ec81c181099 .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "It connects individuals of any class to a reified literal."@en .
+_:Nefb30f3fd8484cd59af9bd440e2d2046 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> .
+<http://purl.org/spar/literal> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "It is used to specify the literal value that an individual of litre:Literal represents."@en .
+<http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Naf29ddcdb3fe4204ba3e5ec81c181099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> "Modelling domains concerning descriptive tags, in which each tag may have more than one meaning depending on the context in which it is used.\nExtending quickly the capabilities of a model by adding the possibility to make assertions on values, previously referred through data properties, without modifying it."@en .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Naf29ddcdb3fe4204ba3e5ec81c181099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes reified literals, where the literal value they represent is speficied through the property litre:hasLiteralValue. Each individual of this class must always have a specified value."@en .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/description> "Recently within the Semantic Web community a new topic has been actively discussed: whether and how to allow literals to be subjects of RDF statements (http://www.w3.org/2001/sw/wiki/Literals as Subjects). This discussions failed to provide a unique and clear indication of how to proceed in that regard.\n\nAlthough one of the suggestions coming out of the discussion was to explicitly include the proposal in a (future) specification of RDF, this topic is not actually new, particularly in ontology modelling. The needs to describe \u201Ctypical\u201D literals (specially strings) as individuals of a particular class has been addressed by a lot of models in past, such as Common Tag (through the class Tag), SIOC (through the classes Category and Tag), SKOS-XL (through the class Label), and LMM (through the class Expression). \n\nAfter considering the above-mentioned models and other related and inspiring ones, we have developed a pattern called literal reification to address this issue. It allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models."@en .
+_:N9c97ea3661de49cbb5c4a44c09f1dbd3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> "This pattern promotes any literal as \u201Cfirst class object\u201D in OWL by reifying it as a proper individual of the class litre:Literal."@en .
+<http://www.semanticweb.org/owlapi#nodeID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> <http://www.w3.org/2000/01/rdf-schema#label> "is literal of"@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nefb30f3fd8484cd59af9bd440e2d2046 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#v> .
+<http://purl.org/spar/literal> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/region.owl> .
+<http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+_:N1aaf384df3f24e3096ca149a09316ada <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/date> "2011-03-23" .
+_:N74d42d593e024421b80e4314defce66f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> .
+_:Naf29ddcdb3fe4204ba3e5ec81c181099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nefb30f3fd8484cd59af9bd440e2d2046 .
+_:N937b64d09a104c4c8619c9c84ce796d5 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:N937b64d09a104c4c8619c9c84ce796d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N33df3bd08c58488980f8124dfa1b6a81 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal"@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://purl.org/spar/literal> <http://www.w3.org/2000/01/rdf-schema#comment> "The pattern literal reification is a modelling technique to address scenarios in which we need to bless particular literals, usually when applying data properties, in order to use them as subjects and/or full-fledged objects of semantic assertions."@en .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> "http://www.ontologydesignpatterns.org/cp/owl/region.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It connects the reified literal to the individuals that are using it."@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/creator> "Fabio Vitali"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N33df3bd08c58488980f8124dfa1b6a81 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2002/07/owl#equivalentClass> _:N9c97ea3661de49cbb5c4a44c09f1dbd3 .
+_:N9c97ea3661de49cbb5c4a44c09f1dbd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+_:N79d4181685924345ada88cadb2507327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N33df3bd08c58488980f8124dfa1b6a81 .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<urn:swrl#v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> "http://www.ontologydesignpatterns.org/cp/owl/region.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:N937b64d09a104c4c8619c9c84ce796d5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> .
+_:N9c97ea3661de49cbb5c4a44c09f1dbd3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:N79d4181685924345ada88cadb2507327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> "http://www.ontologydesignpatterns.org/cp/owl/region.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/2000/01/rdf-schema#label> "has same literal value as"@en .
+_:N74d42d593e024421b80e4314defce66f <http://www.w3.org/2003/11/swrl#head> _:N79d4181685924345ada88cadb2507327 .
+<http://purl.org/spar/literal> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "What is the context in which entities refer to a particular literal value?\nWhat is the meaning of a particular value considering the context in which it is used?"@en .
+<http://purl.org/spar/literal> <http://purl.org/dc/elements/1.1/description> <http://dwellonit.svn.sourceforge.net/svnroot/dwellonit/LiteralReification/literalreification_new.png> .
+<http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<urn:swrl#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N33df3bd08c58488980f8124dfa1b6a81 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#v> .
+_:N74d42d593e024421b80e4314defce66f <http://www.w3.org/2003/11/swrl#body> _:N1aaf384df3f24e3096ca149a09316ada .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+_:N1aaf384df3f24e3096ca149a09316ada <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N937b64d09a104c4c8619c9c84ce796d5 .
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+

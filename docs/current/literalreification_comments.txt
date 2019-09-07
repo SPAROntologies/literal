@@ -1,0 +1,122 @@
+## Class: Literal
+
+This class describes individuals standing for reified literals, definying the value they represent by using the property 'hasLiteralValue'. Note that each individual of this class has always a value specified.
+
+
+## ObjectProperty: hasLiteral
+
+This property allows to specify a reified literal for a particular individual.
+
+
+## ObjectProperty: isLiteralOf
+
+This property allows to specify which are the individuals that use a particular reified literal.
+
+
+## ObjectProperty: hasSameLiteralValueOf
+
+This property relates any reified literal to another one that shares the same literal value.
+
+Apart from being a transitive and reflexive property, it is used as part of the head of a SWRL rule (specified within the ontology) that says the following:
+
+hasSameLiteralValueOf(x,y) ^ hasLiteralValue(y,v) -> hasLiteralValue(x,v)
+
+Note that connecting two reified literals, that specify different values as object of their "hasLiteralValue" assertions, thorugh a "hasSameLiteralValueOf" assertion results in making the ontology inconsistent.
+
+
+## DataProperty: hasLiteralValue
+
+This property is used to specify the literal value an individual of 'Literal' represents.
+
+
+--------------------------------------
+
+
+## Compentency questions
+
+- What is the context in which entities refer to a particular literal value?
+- What are the meanings of a particular value considering the context in which it is used?
+
+
+## Scenarios ##
+
+## Same tag, different meanings
+Used frequently in the Web 2.0, tags are keywords (e.g., strings) assigned to a particular resource, such as a web document, with the intent to describe it. As we could expected, in any natural language a word may have different meanings depending on the context in which it is used and of course a tag, since it is made by words, does not behave differently.
+
+For instance, the word "Paris" may be either a name of a city or a first name of a person. Here, it is clear that the act of tagging with "Paris" both the Wikipedia pages about James Joyce's Ulysses and about Paris Hilton hides two different intents: in the former case, "Paris" means the city in which the Ulysses was published the very first time; in the latter case, "Paris" concerns a particular person, i.e., Paris Hilton.
+
+Also according to the specification of CommonTag RDF vocabulary (http://www.commontag.org) – that use a similar technique to describe tags and relations they have with other resources – here, using the literal reification pattern, it is possible to express tags as first class object in OWL, simply considering them as proper individual of the class "litre:Literal". Moreover, this pattern also allows to link those tags when they share the same tag keyword, although they may have different meanings.
+
+A possible implementation of the previous example about the tag "Paris" that uses the literal reification pattern is the following (defined in Turtle):
+
+@prefix wiki: <http://en.wikipedia.org/wiki/> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://www.essepuntato.it/example/> .
+@prefix litre: <http://www.essepuntato.it/2010/08/literalreification> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/>
+@prefix lmm <http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#> .
+
+wiki:Ulysses_%28novel%29 a foaf:Document
+	; prism:keyword :parisTag1 .
+	
+wiki:Paris_Hilton a foaf:Document
+	; prism:keyword :parisTag2 .
+	
+:parisTag1 a litre:Literal
+		, [ a skos:Concept
+			; skos:definition "A name associated to a city"@en ]
+	; litre:hasLiteralValue "Paris"
+	; lmm:denotes dbpedia:Paris .
+			
+:parisTag2 a litre:Literal
+		, [ a skos:Concept
+			; skos:definition "A first name of a person"@en ]
+	; litre:hasSameLiteralValueOf :parisTag1
+	; lmm:denotes dbpedia:Paris_Hilton .
+
+
+## Keeping track of name changes
+NameHistory3.0 is a (fictional) institution that keeps track of all the names of people storing them as an ABox of the FOAF ontology. In particular, each person is stored as individual of the FOAF class "Person" with a specific given name, by using the FOAF data property "givenName", and family name, thorugh the FOAF data property "familyName".
+
+When he was 27, on September 24th 2010 Mr. Bruce Wayne asked for changing his first name in Jack, applying for a proper legal act. Since NameHistory3.0 has to keep track of everything concerning names, starting from that date it added also "Jack" as Mr. Wayne's first name. But now NameHistory3.0 noticed that, without any other information, it was not possible to know which Mr. Wayne's first name was legally valid at a certain point in time.
+
+A plausible solution to that scenario, that avoids the modification of the ontology model and consequently of the entire triple store (operation that is obviously time-consuming and error-prone), is to use the literal reification pattern in combination with the new expressiveness of OWL 2. Through them, it is possible to define a literal individual as also belonging to the class "givenName" – that is defined as data property of course but may be meta-modelled as class too. In this way, we can associate a particular time interval to each literal, so as to represent when the literal itself, i.e., the given name is legally valid.
+
+A possible implementation of the previous example about Mr. Wayne is the following (defined in Turtle):
+
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix : <http://www.essepuntato.it/example/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+:mr_wayne a foaf:Person
+	; foaf:familyName "Wayne"
+	; litre:hasLiteral 
+		[ a litre:Literal , foaf:givenName
+			; litre:hasLiteralValue "Bruce"
+			; dcterms:valid 
+				[ a ti:TimeInterval
+					; ti:hasIntervalStartDate "1983-01-15"
+					; ti:hasIntervalEndDate "2010-09-24"] ]
+	; litre:hasLiteral 
+		[ a litre:Literal , foaf:givenName
+			; litre:hasLiteralValue "Jack"
+			; dcterms:valid 
+				[ a ti:TimeInterval
+					; ti:hasIntervalStartDate "2010-09-24" ] ] .
+		
+
+## Defining references from document descriptions
+Cambiamento di un dato viene distribuito a tutti quelli che lo usano
+Ordine su letterali e misto
+
+## Unit tests
+SELECT DISTINCT ?entity ?property
+WHERE {
+	?literal a litre:Literal .
+	{ ?literal ?property ?entity } UNION { ?entity ?property ?literal }
+}
