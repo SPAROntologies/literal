@@ -1,10 +1,17 @@
-This is a copy - with a related change of the main URL of the ontology - of the Literal Reification ontology design pattern (imported by DataCite) and previously available at http://www.essepuntato.it/2010/06/literalreification. It has been imported here in SPAR for guaranteeing its long-term sustainability.
+# Bibliometric Data Ontology (BiDO)
 
-The directory `docs` contains all the files related to the ontology, its versions in time, and the related documentations. In particular, it includes:
+The Literal Reification ontology design pattern allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models.
 
-* the `current` directory, where the files of the current version of the ontology are stored;
-* one `yyyy-mm-dd` version directory for each of the versions of the ontology developed.
+**URL:** http://purl.org/spar/literal
 
-The `current` directory contains a `.owl` file named after the lowercase ontology acronym, which is the source of the ontology in a particular format between RDF/XML, Turtle, N-triples, or JSON-LD. In addition to this file, the directory includes five other files, named in the same way and with the following extensions specifying each of five different formats: `.xml` (RDF/XML), `.ttl` (Turtle), `.nt` (Ntriple), `.json` (JSON-LD), `.html` (HTML, i.e. the human readable documentation of the ontology). All the images used in the documentation should additionally be included in this `.html` directory.
+**Creators**: [Aldo Gangemi](https://orcid.org/0000-0001-5568-2684), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305), [Fabio Vitali](https://orcid.org/0000-0002-7562-5203)
 
-The version directories (i.e. `yyyy-mm-dd`) contains the same kinds of files as those included in the `current` directory, but specific for that particular version. However, the `.owl` file should be present only in the `current` directory.
+**Contributors**: [Sebastian Barzaghi](https://orcid.org/0000-0002-0799-1527)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Cite as:** Gangemi, A., Peroni, S., & Vitali, F. (2010). Literal reification. Proceedings of WOP, 2010, 65-66. https://dl.acm.org/doi/abs/10.5555/2878924.2878933.
+
+> This is a copy - with a related change of the main URL of the ontology - of the Literal Reification ontology design pattern (imported by DataCite) and previously available at http://www.essepuntato.it/2010/06/literalreification. It has been imported here in SPAR for guaranteeing its long-term sustainability.
+
+

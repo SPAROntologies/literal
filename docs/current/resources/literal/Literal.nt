@@ -1,0 +1,11 @@
+_:n4d13db1d48194cbd892e2fb762ca7de0b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#label> "literal"@en .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+_:n4d13db1d48194cbd892e2fb762ca7de0b1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> .
+_:n4d13db1d48194cbd892e2fb762ca7de0b1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2002/07/owl#equivalentClass> _:n4d13db1d48194cbd892e2fb762ca7de0b1 .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#comment> "A reified literal."@en .
+<http://www.essepuntato.it/2010/06/literalreification/Literal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/literal/> .

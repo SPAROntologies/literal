@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix region: <http://www.ontologydesignpatterns.org/cp/owl/region.owl#> .
+
+region:isRegionFor a owl:ObjectProperty ;
+    rdfs:label "is region for"@en ;
+    rdfs:comment "A relation between a region and an entity."@en ;
+    rdfs:isDefinedBy region: ;
+    owl:inverseOf region:hasRegion .
+
