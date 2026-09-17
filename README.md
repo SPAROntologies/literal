@@ -1,4 +1,4 @@
-# Bibliometric Data Ontology (BiDO)
+# Literal Reification pattern
 
 The Literal Reification ontology design pattern allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models.
 
