@@ -1,0 +1,9 @@
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/literal/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "has literal"@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2010/06/literalreification/Literal> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and a reified literal."@en .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteral> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> .

@@ -1,0 +1,28 @@
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+literal:hasSameLiteralValueAs a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has same literal value as"@en ;
+    vann:example """
+    :my-resource
+        literal:hasLiteral :my-literal .
+
+    :my-literal a literal:Literal ;
+        literal:hasLiteralValue "My Resource" ;
+        literal:hasSameLiteralValueAs :my-other-literal .
+
+    :my-other-literal a literal:Literal ;
+        literal:hasLiteralValue "My Resource" .
+    """ ;
+    rdfs:comment "The relation between a reified literal and another one that has the same literal value."@en ;
+    rdfs:domain literal:Literal ;
+    rdfs:isDefinedBy <http://purl.org/spar/literal/> ;
+    rdfs:range literal:Literal ;
+    vs:term_status reg:statusStable .
+

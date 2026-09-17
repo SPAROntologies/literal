@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix region: <http://www.ontologydesignpatterns.org/cp/owl/region.owl#> .
+
+region:hasRegionDataValue a owl:DatatypeProperty ;
+    rdfs:label "has region data value"@en ;
+    rdfs:comment "The encoded value of a region."@en ;
+    rdfs:domain region:Region ;
+    rdfs:isDefinedBy region: ;
+    rdfs:range rdfs:Literal .
+
