@@ -1,6 +1,12 @@
 # Literal Reification pattern
 
-The Literal Reification ontology design pattern allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models.
+[![License](https://img.shields.io/github/license/SPAROntologies/literal)](LICENSE.md)
+[![Release](https://img.shields.io/github/v/release/SPAROntologies/literal)](https://github.com/SPAROntologies/literal/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/SPAROntologies/literal/validation.yml?label=tests)](https://github.com/SPAROntologies/literal/actions/workflows/validation.yml)
+[![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/literal)
+[![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Fliteral-blue)](http://purl.org/spar/literal)
+
+The **_Literal Reification ontology design pattern_** allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models.
 
 **URL:** http://purl.org/spar/literal
 

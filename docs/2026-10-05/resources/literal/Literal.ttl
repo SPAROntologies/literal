@@ -1,0 +1,26 @@
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix region: <http://www.ontologydesignpatterns.org/cp/owl/region.owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+literal:Literal a owl:Class ;
+    rdfs:label "literal"@en ;
+    vann:example """
+    :my-resource
+        literal:hasLiteral :my-literal .
+
+    :my-literal a literal:Literal ;
+        literal:hasLiteralValue "My Resource" .
+    """ ;
+    rdfs:comment "A reified literal."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/literal/> ;
+    rdfs:subClassOf region:Region ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty literal:hasLiteralValue ] ;
+    vs:term_status reg:statusStable .
+
