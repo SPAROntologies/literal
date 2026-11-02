@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: The Literal Reification pattern
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+- given-names: Aldo
+  family-names: Gangemi
+  orcid: 'https://orcid.org/0000-0001-5568-2684'
+- given-names: Silvio
+  family-names: Peroni
+  orcid: 'https://orcid.org/0000-0003-0530-4305'
+- given-names: Fabio
+  family-names: Vitali
+  orcid: 'https://orcid.org/0000-0002-7562-5203'
+repository-code: 'https://github.com/SPAROntologies/literal'
+abstract: 'The Literal Reification ontology design pattern allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models.'
+keywords:
+- literal values
+- ontology design patterns
+license: CC-BY-4.0
+version: 1.1.1
+date-released: '2026-10-05'
+preferred-citation:
+  type: conference-paper
+  authors:
+  - given-names: Aldo
+    family-names: Gangemi
+    orcid: 'https://orcid.org/0000-0001-5568-2684'
+  - given-names: Silvio
+    family-names: Peroni
+    orcid: 'https://orcid.org/0000-0003-0530-4305'
+  - given-names: Fabio
+    family-names: Vitali
+    orcid: 'https://orcid.org/0000-0002-7562-5203'
+  doi: "https://dl.acm.org/doi/abs/10.5555/2878924.2878933"
+  collection-title: "Proceedings of WOP, 2010"
+  collection-type: "proceedings"
+  notes: "CEUR Workshop Proceedings"
+  title: "Literal Reification"
+  year: 2010
+  publisher:
+    name: "CEUR-WS.org"
+    city: "Aachen"
+    country: "DE"

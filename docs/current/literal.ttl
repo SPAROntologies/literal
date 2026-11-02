@@ -30,7 +30,7 @@ dc:title a owl:AnnotationProperty .
     dc:creator "Aldo Gangemi (https://orcid.org/0000-0001-5568-2684)"^^xsd:string,
         "Fabio Vitali (https://orcid.org/0000-0002-7562-5203)"^^xsd:string,
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-09-16" ;
+    dc:date "2026-10-05" ;
     dc:description """
 The **_Literal Reification pattern_** is an Ontology Design Pattern that addresses scenarios in which it is needed to bless particular literals, usually when applying data properties, in order to use them as subjects and/or full-fledged objects of semantic assertions.
 
@@ -77,7 +77,7 @@ Literal reification allows linking synonyms, shared values, or contextual taggin
 
 ## Competency Questions
 
-Literal Reification can be sed for answering several questions related to literals' context.
+Literal Reification can be used for answering several questions related to literals' context.
 
 In the following subsections, some of them are introduced together with their respective SPARQL queries. 
 
@@ -121,29 +121,29 @@ Which entities are annotated with a literal that has a specific value?
     dcterms:created "2011-03-23" ;
     dcterms:issued "2011-03-23" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-16" ;
+    dcterms:modified "2026-10-05" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/literal/blob/master/docs/cq.md> ;
-    bibo:doi "https://doi.org/10.25504/FAIRsharing.d7f0a9" ;
+    bibo:doi "TBA" ;
     bibo:status <http://purl.org/ontology/bibo/status/published> ;
-    vann:changes """
-* **v1.1.0**: 
-Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-Changed prefix from `litre:` to `literal:`.
-    """@en ;
+    vann:changes <https://github.com/SPAROntologies/literal/blob/master/CHANGELOG.md> ;
     vann:preferredNamespacePrefix "literal"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/literal"@en ;
     rdfs:seeAlso <http://ontologydesignpatterns.org/index.php/Submissions:Literal_Reification> ;
-    owl:backwardCompatibleWith literal:2011-03-23 ;
+    owl:backwardCompatibleWith literal:2026-09-16 ;
     owl:imports <http://www.ontologydesignpatterns.org/cp/owl/region.owl> ;
-    owl:priorVersion literal:2011-03-23 ;
-    owl:versionIRI literal:2026-09-16 ;
-    owl:versionInfo "1.1.0" ;
-    foaf:logo <https://github.com/SPAROntologies/literal/blob/master/spar.png> ;
+    owl:priorVersion literal:2026-09-16 ;
+    owl:versionIRI literal:2026-10-05 ;
+    owl:versionInfo "1.1.1" ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/literal> ;
     schema:image <https://github.com/SPAROntologies/literal/blob/master/docs/current/literal.png> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
-    schema:keywords "literal values"@en,
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "literal values"@en ,
         "ontology design patterns"@en .
 
 literal:hasLiteral a owl:ObjectProperty ;

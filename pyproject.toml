@@ -1,11 +1,7 @@
 [project]
 name = "literal"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.1.1"
+description = "The Literal Reification ontology design pattern allows to express literal values as proper ontological individuals so as to use them as subject/object of any assertion within OWL models."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "codespell>=2.4.3",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []
