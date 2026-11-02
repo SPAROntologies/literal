@@ -172,10 +172,10 @@ Which entities are annotated with a literal that has a specific value?
         rdfs:comment "A reified literal."@en ;
         rdfs:isDefinedBy &lt;http://purl.org/spar/literal/> ;
         rdfs:subClassOf region:Region ;
-        owl:equivalentClass _:n038b101acea14a27ba5d38824e2239efb1 ;
+        owl:equivalentClass _:ndf941d2b1e854d38a65b75e8a864ccbab1 ;
         vs:term_status reg:statusStable .
 
-    _:n038b101acea14a27ba5d38824e2239efb1 a owl:Restriction ;
+    _:ndf941d2b1e854d38a65b75e8a864ccbab1 a owl:Restriction ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
         owl:onProperty literal:hasLiteralValue .
 }
@@ -217,7 +217,7 @@ Which entities are annotated with a literal that has a specific value?
         ],
         "http://www.w3.org/2002/07/owl#equivalentClass": [
           {
-            "@id": "_:n038b101acea14a27ba5d38824e2239efb1"
+            "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab1"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -227,7 +227,7 @@ Which entities are annotated with a literal that has a specific value?
         ]
       },
       {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb1",
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab1",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -246,17 +246,17 @@ Which entities are annotated with a literal that has a specific value?
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_50097a5d0b1971d22d7a0304a297d474_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2002/07/owl#equivalentClass> _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://purl.org/spar/literal> .
-_:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_50097a5d0b1971d22d7a0304a297d474_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
+_:ndf941d2b1e854d38a65b75e8a864ccbab1 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2002/07/owl#equivalentClass> _:ndf941d2b1e854d38a65b75e8a864ccbab1 &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#label> "literal"@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
-_:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://purl.org/spar/literal> .
-_:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinality> "1"^^&lt;http://www.w3.org/2001/XMLSchema#nonNegativeInteger> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
+_:ndf941d2b1e854d38a65b75e8a864ccbab1 &lt;http://www.w3.org/2002/07/owl#cardinality> "1"^^&lt;http://www.w3.org/2001/XMLSchema#nonNegativeInteger> &lt;http://purl.org/spar/literal> .
+_:ndf941d2b1e854d38a65b75e8a864ccbab1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A reified literal."@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_b07fccfd6eaea099f341d2adb7f1a04a_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>region</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region <a title="Go to resource documentation" class=ms-2 href=resources/region/Region.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="Any region in a dimensional space, which can be used as a value for a quality of an entity.">Any region in a dimensional space, which can be used as a value for a quality of an entity.
@@ -301,10 +301,10 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_b07fccfd6eaea099f341d2adb7f1a04a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_b07fccfd6eaea099f341d2adb7f1a04a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/literal> .
 &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://www.w3.org/2000/01/rdf-schema#label> "region"@en &lt;http://purl.org/spar/literal> .
 &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Any region in a dimensional space, which can be used as a value for a quality of an entity."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#> &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=relations><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Object Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">5</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_824c1994d659a4a50fafec547bdc8b83_Relation> has literal </a><a href=#id_2fe7f17bd9b1120d31f909b35773b493_Relation> has region </a><a href=#id_30ac2853dd6cac333db0f850c878c8f5_Relation> has same literal value as </a><a href=#id_efdc85070ca9ff2dd080dea8cbdb9b30_Relation> is literal of </a><a href=#id_4d07d372f9dc6b0001cabe9cbb1b8a06_Relation> is region for </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_824c1994d659a4a50fafec547bdc8b83_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has literal</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2010/06/literalreification/hasLiteral <a title="Go to resource documentation" class=ms-2 href=resources/literal/hasLiteral.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between something and a reified literal.">The relation between something and a reified literal.
@@ -405,15 +405,15 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_824c1994d659a4a50fafec547bdc8b83_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and a reified literal."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has literal"@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_824c1994d659a4a50fafec547bdc8b83_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and a reified literal."@en &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteral> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has literal"@en &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_2fe7f17bd9b1120d31f909b35773b493_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has region</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion <a title="Go to resource documentation" class=ms-2 href=resources/region/hasRegion.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A relation between an entity and a region.">A relation between an entity and a region.
@@ -464,11 +464,11 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_2fe7f17bd9b1120d31f909b35773b493_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_2fe7f17bd9b1120d31f909b35773b493_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
 &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an entity and a region."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has region"@en &lt;http://purl.org/spar/literal> .
 &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has region"@en &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_30ac2853dd6cac333db0f850c878c8f5_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has same literal value as</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs <a title="Go to resource documentation" class=ms-2 href=resources/literal/hasSameLiteralValueAs.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a reified literal and another one that has the same literal value.">The relation between a reified literal and another one that has the same literal value.
@@ -533,9 +533,9 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
       {
         "@id": "http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs",
         "@type": [
+          "http://www.w3.org/2002/07/owl#TransitiveProperty",
           "http://www.w3.org/2002/07/owl#ObjectProperty",
-          "http://www.w3.org/2002/07/owl#SymmetricProperty",
-          "http://www.w3.org/2002/07/owl#TransitiveProperty"
+          "http://www.w3.org/2002/07/owl#SymmetricProperty"
         ],
         "http://purl.org/vocab/vann/example": [
           {
@@ -578,16 +578,16 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_30ac2853dd6cac333db0f850c878c8f5_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_30ac2853dd6cac333db0f850c878c8f5_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#TransitiveProperty> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:hasSameLiteralValueAs :my-other-literal .\n\n    :my-other-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has same literal value as"@en &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a reified literal and another one that has the same literal value."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://purl.org/vocab/vann/example> "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:hasSameLiteralValueAs :my-other-literal .\n\n    :my-other-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#SymmetricProperty> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#TransitiveProperty> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has same literal value as"@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_efdc85070ca9ff2dd080dea8cbdb9b30_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>is literal of</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2010/06/literalreification/isLiteralOf <a title="Go to resource documentation" class=ms-2 href=resources/literal/isLiteralOf.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a reified literal and some thing that is using it.">The relation between a reified literal and some thing that is using it.
@@ -676,14 +676,14 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_efdc85070ca9ff2dd080dea8cbdb9b30_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is literal of"@en &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_efdc85070ca9ff2dd080dea8cbdb9b30_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a reified literal and some thing that is using it."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://purl.org/vocab/vann/example> "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:isLiteralOf :my-resource .\n    " &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is literal of"@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/isLiteralOf> &lt;http://purl.org/vocab/vann/example> "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:isLiteralOf :my-resource .\n    " &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_4d07d372f9dc6b0001cabe9cbb1b8a06_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>is region for</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor <a title="Go to resource documentation" class=ms-2 href=resources/region/isRegionFor.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A relation between a region and an entity.">A relation between a region and an entity.
@@ -734,11 +734,11 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_4d07d372f9dc6b0001cabe9cbb1b8a06_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is region for"@en &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_4d07d372f9dc6b0001cabe9cbb1b8a06_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a region and an entity."@en &lt;http://purl.org/spar/literal> .
 &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#> &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a region and an entity."@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is region for"@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=attributes><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Data Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">2</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_7c92db6e44d50449d092e2b4df22147e_Attribute> has literal value </a><a href=#id_d9ed84bc026ba5c844c08bdaaaf2dd6d_Attribute> has region data value </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_7c92db6e44d50449d092e2b4df22147e_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has literal value</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue <a title="Go to resource documentation" class=ms-2 href=resources/literal/hasLiteralValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The literal value that a reified literal represents.">The literal value that a reified literal represents.
@@ -783,8 +783,8 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
       {
         "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
         "@type": [
-          "http://www.w3.org/2002/07/owl#FunctionalProperty",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+          "http://www.w3.org/2002/07/owl#DatatypeProperty",
+          "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
         "http://purl.org/vocab/vann/example": [
           {
@@ -832,16 +832,16 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_7c92db6e44d50449d092e2b4df22147e_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#FunctionalProperty> &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_7c92db6e44d50449d092e2b4df22147e_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://purl.org/vocab/vann/example> "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://purl.org/spar/literal> .
 &lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The literal value that a reified literal represents."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.essepuntato.it/2010/06/literalreification/Literal> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/literal/> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://purl.org/vocab/vann/example> "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    " &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/literal> .
-&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has literal value"@en &lt;http://purl.org/spar/literal> .
+&lt;http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#FunctionalProperty> &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_d9ed84bc026ba5c844c08bdaaaf2dd6d_Attribute><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has region data value</div> <sup class="badge bg-light text-secondary dp" title="Data Property">dp</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#attributes>Data Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue <a title="Go to resource documentation" class=ms-2 href=resources/region/hasRegionDataValue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The encoded value of a region.">The encoded value of a region.
@@ -898,12 +898,12 @@ _:n038b101acea14a27ba5d38824e2239efb1 &lt;http://www.w3.org/2002/07/owl#cardinal
     ],
     "@id": "http://purl.org/spar/literal"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_d9ed84bc026ba5c844c08bdaaaf2dd6d_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#> &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The encoded value of a region."@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has region data value"@en &lt;http://purl.org/spar/literal> .
-&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/literal> .
+]</code></pre></div><div class="tab-pane fade" id=id_d9ed84bc026ba5c844c08bdaaaf2dd6d_Attribute_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The encoded value of a region."@en &lt;http://purl.org/spar/literal> .
 &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#DatatypeProperty> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://www.w3.org/2000/01/rdf-schema#Literal> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#> &lt;http://purl.org/spar/literal> .
+&lt;http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has region data value"@en &lt;http://purl.org/spar/literal> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=annotations><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Annotation Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">7</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_dacf627f3d9075d7c805ce9d42521333_Annotation> comment </a><a href=#id_5e23481d3557e50321efa143ca0ae276_Annotation> contributor </a><a href=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation> creator </a><a href=#id_faeeb6444c2ed08c40ecc1880be289ca_Annotation> date </a><a href=#id_38e1536b72babc1a393bbfc37d7a86eb_Annotation> description </a><a href=#id_4f75ce12336ab89a4edebd807cd62265_Annotation> label </a><a href=#id_10a2b68e090fc22a4421947526be1e64_Annotation> title </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>comment</div> <sup class="badge bg-light text-secondary ap" title="Annotation Property">ap</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#annotations>Annotation Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.w3.org/2000/01/rdf-schema#comment <a title="Go to resource documentation" class=ms-2 href=resources/rdfs/comment.html><i class="bi bi-box-arrow-up-right"></i></a></div><div class="card-footer bg-white py-0"><div class="accordion accordion-flush prov-accordion" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_acc><div class=accordion-item><h2 class="accordion-header d-flex justify-content-end" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_head><button class="accordion-button collapsed py-1 px-2 small fw-bold text-uppercase text-primary w-auto" title="RDF provenance" aria-controls=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov aria-expanded=false data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov data-bs-toggle=collapse type=button><span>RDF provenance</span> <i class="bi bi-code"></i></button></h2><div class="accordion-collapse collapse" aria-labelledby=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_head data-bs-parent=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_acc id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov><div class="accordion-body p-2"><ul class="nav nav-tabs nav-tabs-sm justify-content-end small mb-0" role=tablist><li class=nav-item role=presentation><button class="nav-link active py-1 px-2" data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_1 data-bs-toggle=tab role=tab type=button>TriG</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_2 data-bs-toggle=tab role=tab type=button>JSON-LD</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_3 data-bs-toggle=tab role=tab type=button>N-Quads</button></ul><div class=tab-content><div class="tab-pane fade show active" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_1 role=tabpanel><pre class="mb-0 small"><code>@prefix owl: &lt;http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .

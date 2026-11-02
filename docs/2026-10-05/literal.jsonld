@@ -1,101 +1,43 @@
 [
   {
-    "@id": "http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs",
+    "@id": "http://purl.org/dc/elements/1.1/title",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#SymmetricProperty",
-      "http://www.w3.org/2002/07/owl#TransitiveProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:hasSameLiteralValueAs :my-other-literal .\n\n    :my-other-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between a reified literal and another one that has the same literal value."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/literal/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has same literal value as"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://www.essepuntato.it/2010/06/literalreification/isLiteralOf",
+    "@id": "http://purl.org/dc/elements/1.1/creator",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:isLiteralOf :my-resource .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between a reified literal and some thing that is using it."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/literal/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "is literal of"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor",
+    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A relation between a region and an entity."
+        "@value": "A relation between an entity and a region."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -106,201 +48,58 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "is region for"
+        "@value": "has region"
       }
     ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"
       }
     ]
   },
   {
-    "@id": "urn:swrl#y",
+    "@id": "urn:swrl#v",
     "@type": [
       "http://www.w3.org/2003/11/swrl#Variable"
     ]
   },
   {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb2",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#Imp"
-    ],
-    "http://www.w3.org/2003/11/swrl#body": [
-      {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb3"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#head": [
-      {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb7"
-      }
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb3",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb4"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb5"
-      }
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb4",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl#x"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#argument2": [
-      {
-        "@id": "urn:swrl#y"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs"
-      }
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb5",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb6"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@list": []
-      }
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb6",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl#y"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#argument2": [
-      {
-        "@id": "urn:swrl#v"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb7",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#AtomList"
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-      {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb8"
-      }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-      {
-        "@list": []
-      }
-    ]
-  },
-  {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb8",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
-    ],
-    "http://www.w3.org/2003/11/swrl#argument1": [
-      {
-        "@id": "urn:swrl#x"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#argument2": [
-      {
-        "@id": "urn:swrl#v"
-      }
-    ],
-    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    "
-      }
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The literal value that a reified literal represents."
+        "@value": "The encoded value of a region."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/literal/"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has literal value"
+        "@value": "has region data value"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
       }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -337,7 +136,7 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n038b101acea14a27ba5d38824e2239efb1"
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab1"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -347,7 +146,7 @@
     ]
   },
   {
-    "@id": "_:n038b101acea14a27ba5d38824e2239efb1",
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -364,59 +163,129 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab2",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2003/11/swrl#Imp"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2003/11/swrl#body": [
       {
-        "@language": "en",
-        "@value": "Any region in a dimensional space, which can be used as a value for a quality of an entity."
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab3"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2003/11/swrl#head": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "region"
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab7"
       }
     ]
   },
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion",
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab3",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2003/11/swrl#AtomList"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@language": "en",
-        "@value": "A relation between an entity and a region."
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab4"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab5"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab4",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+    ],
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl#x"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2003/11/swrl#argument2": [
       {
-        "@language": "en",
-        "@value": "has region"
+        "@id": "urn:swrl#y"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab5",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#AtomList"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@list": []
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab6",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+    ],
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl#y"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#argument2": [
+      {
+        "@id": "urn:swrl#v"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
+      {
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab7",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#AtomList"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab8"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@list": []
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf941d2b1e854d38a65b75e8a864ccbab8",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+    ],
+    "http://www.w3.org/2003/11/swrl#argument1": [
+      {
+        "@id": "urn:swrl#x"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#argument2": [
+      {
+        "@id": "urn:swrl#v"
+      }
+    ],
+    "http://www.w3.org/2003/11/swrl#propertyPredicate": [
+      {
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue"
       }
     ]
   },
@@ -469,55 +338,14 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/contributor",
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/date",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "urn:swrl#v",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#Variable"
-    ]
-  },
-  {
-    "@id": "urn:swrl#x",
-    "@type": [
-      "http://www.w3.org/2003/11/swrl#Variable"
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The encoded value of a region."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"
+        "@value": "Any region in a dimensional space, which can be used as a value for a quality of an entity."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -528,19 +356,51 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has region data value"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        "@value": "region"
       }
     ]
   },
   {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@id": "http://www.essepuntato.it/2010/06/literalreification/isLiteralOf",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:isLiteralOf :my-resource .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between a reified literal and some thing that is using it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/literal/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is literal of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
     ]
   },
   {
@@ -724,6 +584,146 @@
         "@language": "en",
         "@value": "ontology design patterns"
       }
+    ]
+  },
+  {
+    "@id": "urn:swrl#x",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#Variable"
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2010/06/literalreification/hasSameLiteralValueAs",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-resource\n        literal:hasLiteral :my-literal .\n\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" ;\n        literal:hasSameLiteralValueAs :my-other-literal .\n\n    :my-other-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between a reified literal and another one that has the same literal value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/literal/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has same literal value as"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A relation between a region and an entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is region for"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-literal a literal:Literal ;\n        literal:hasLiteralValue \"My Resource\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The literal value that a reified literal represents."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/literal/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has literal value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "urn:swrl#y",
+    "@type": [
+      "http://www.w3.org/2003/11/swrl#Variable"
     ]
   }
 ]

@@ -4,11 +4,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue">
-    <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
     <rdfs:comment xml:lang="en">The encoded value of a region.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"/>
-    <rdfs:label xml:lang="en">has region data value</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has region data value</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

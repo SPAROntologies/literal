@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region">
+    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">region</rdfs:label>
     <rdfs:comment xml:lang="en">Any region in a dimensional space, which can be used as a value for a quality of an entity.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"/>
   </rdf:Description>
 </rdf:RDF>
