@@ -7,9 +7,11 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/Literal">
-    <owl:equivalentClass rdf:nodeID="n038b101acea14a27ba5d38824e2239efb1"/>
-    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/literal/"/>
+    <owl:equivalentClass rdf:nodeID="ndf941d2b1e854d38a65b75e8a864ccbab1"/>
+    <rdfs:label xml:lang="en">literal</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-resource
         literal:hasLiteral :my-literal .
@@ -17,14 +19,12 @@
     :my-literal a literal:Literal ;
         literal:hasLiteralValue "My Resource" .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/literal/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">literal</rdfs:label>
     <rdfs:comment xml:lang="en">A reified literal.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n038b101acea14a27ba5d38824e2239efb1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="ndf941d2b1e854d38a65b75e8a864ccbab1">
     <owl:onProperty rdf:resource="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue"/>
     <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>
